@@ -2623,7 +2623,14 @@ def test_tensorflow_zeros_like(
         allow_inf=False,
     ),
 )
-def test_tensorflow_scatter_nd(x, frontend, backend_fw, test_flags, fn_tree, on_device,):
+def test_tensorflow_scatter_nd(
+    x, 
+    frontend, 
+    backend_fw, 
+    test_flags, 
+    fn_tree, 
+    on_device
+):
     (val_dtype, ind_dtype, update_dtype), vals, ind, updates = x
     shape = vals.shape
     helpers.test_frontend_function(
