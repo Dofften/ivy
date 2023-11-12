@@ -2637,3 +2637,4 @@ def test_tensorflow_scatter_nd(x, frontend, backend_fw, test_flags, fn_tree, on_
         updates=updates,
         shape=shape,
     )
+
